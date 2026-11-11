@@ -7,7 +7,7 @@ Skrócona dokumentacja oraz komendy startowe serwera **vLLM** dla kart **NVIDIA 
 ## 🛠️ Gotowe komendy startowe vLLM (RunPod Docker Arguments)
 
 ### 1. NVIDIA L40S (48 GB VRAM)
-* **Opcja A (`Qwen/Qwen3.6-35B-A3B-FP8`)** general
+* **Opcja A (`Qwen/Qwen3.6-35B-A3B-FP8`)** general (!!! mój wybór !!!)
 
 ```
 Qwen/Qwen3.6-35B-A3B-FP8 --max-model-len 262144 --gpu-memory-utilization 0.95 --max-num-seqs 4 --language-model-only --reasoning-parser qwen3 --enable-auto-tool-choice --tool-call-parser qwen3_xml --host 0.0.0.0 --port 8000 --default-chat-template-kwargs '{"preserve_thinking":true}' --override-generation-config '{"temperature":1.0,"top_p":0.95,"top_k":20,"min_p":0.0,"presence_penalty":1.5,"repetition_penalty":1.0}'
